@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class FirstPersonController : MonoBehaviour
@@ -47,7 +48,6 @@ public class FirstPersonController : MonoBehaviour
 
 
     }
-
     void Update()
     {
         HandleCrouch();
@@ -130,6 +130,6 @@ public class FirstPersonController : MonoBehaviour
         characterController.center = Vector3.Lerp(characterController.center, targetCenter, Time.deltaTime * crouchTransitionSpeed);
 
         mainCamera.transform.localPosition = Vector3.Lerp(mainCamera.transform.localPosition, targetCamPos, Time.deltaTime * crouchTransitionSpeed);
-    }
 
+    }
 }

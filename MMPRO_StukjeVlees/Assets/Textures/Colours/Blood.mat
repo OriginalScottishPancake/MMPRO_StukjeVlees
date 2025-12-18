@@ -20,18 +20,20 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Red
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: Blood
+  m_Shader: {fileID: -6465566751694194690, guid: 17380f35f19570947ab5f046d3fc8911, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _BUILTIN_SURFACE_TYPE_TRANSPARENT
+  m_ValidKeywords:
+  - _BUILTIN_ALPHATEST_ON
+  - _BUILTIN_AlphaClip
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
@@ -87,14 +89,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BUILTIN_AlphaClip: 0
+    - _BUILTIN_AlphaClip: 1
     - _BUILTIN_Blend: 0
     - _BUILTIN_CullMode: 0
-    - _BUILTIN_DstBlend: 10
+    - _BUILTIN_DstBlend: 0
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _BUILTIN_SrcBlend: 5
-    - _BUILTIN_Surface: 1
+    - _BUILTIN_SrcBlend: 1
+    - _BUILTIN_Surface: 0
     - _BUILTIN_ZTest: 4
     - _BUILTIN_ZWrite: 1
     - _BUILTIN_ZWriteControl: 1
@@ -113,9 +115,11 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _Wave_Speed: 1
+    - _Wave_Strength: 0.2
     - _ZWrite: 1
     m_Colors:
-    - _Base: {r: 0, g: 0, b: 0, a: 1}
+    - _Base: {r: 0.3490566, g: 0, b: 0, a: 0.05882353}
     - _Color: {r: 0.5283019, g: 0, b: 0, a: 0.972549}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
