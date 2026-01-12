@@ -64,7 +64,7 @@ public class PhoneInputHandler : MonoBehaviour
 
     private void CheckAnimation()
     {
-        ChangeAnimation("Idle");
+       // ChangeAnimation("Idle");
 
         if (currentAnimation == "View" || currentAnimation == "Unview")
         {
