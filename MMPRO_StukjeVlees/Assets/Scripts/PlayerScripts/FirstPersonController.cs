@@ -20,6 +20,9 @@ public class FirstPersonController : MonoBehaviour
     [SerializeField] private float crouchTransitionSpeed = 10f;
     [SerializeField] private float crouchSpeedMultiplier = 0.5f;
 
+    [Header("Phone references")]
+    [SerializeField] private GameObject flashlightToggle;
+
     [Header("References")]
     [SerializeField] private CharacterController characterController;
     [SerializeField] private Camera mainCamera;

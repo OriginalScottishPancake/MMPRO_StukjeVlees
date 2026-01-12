@@ -28,6 +28,7 @@ public class PlayerInputHandler : MonoBehaviour
     public bool SprintTriggered  { get; private set; }
     public bool CrouchTriggered  { get; private set; }
 
+
     private void Awake()
     {
         InputActionMap mapReference = playerControls.FindActionMap(actionMapName);  
@@ -57,6 +58,8 @@ public class PlayerInputHandler : MonoBehaviour
 
         crouchAction.performed += inputInfo => CrouchTriggered = true;
         crouchAction.canceled += inputInfo => CrouchTriggered = false;
+
+       
     }
 
     private void OnEnable()
